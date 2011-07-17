@@ -22,4 +22,7 @@ setup(
       "Intended Audience :: Developers",
       "License :: OSI Approved :: GNU General Public License (GPL)",
   ],
+  install_requires=[
+        "httplib2"
+    ],
 )

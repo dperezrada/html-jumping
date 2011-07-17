@@ -3,10 +3,13 @@ Allows to get an HTML, coming from several previous URLs. Sometimes this is need
 
 # Pre-requisites
 You will need:
-    - httplib2
-    - http://socksipy.sourceforge.net/ (if you want to use a proxy)
+
+* httplib2
+* http://socksipy.sourceforge.net/ (if you want to use a proxy)
+
 To run the test you will also need:
-    - lxml
+
+* lxml
 
 # Example
 ## No proxy 
@@ -27,7 +30,7 @@ To run the test you will also need:
             }
         }
     ]
-    received_header, received_content = self.handler.get(urls)
+    received_header, received_content = handler.get(urls)
 
 ## With proxy
 Allow you to use a HTTP proxy, you will need to install the socksipy library.
@@ -49,7 +52,7 @@ Allow you to use a HTTP proxy, you will need to install the socksipy library.
             }
         }
     ]
-    received_header, received_content = self.handler.get(
+    received_header, received_content = handler.get(
         urls,
         proxy_info = {'host': '127.0.0.1', 'port': '8081'}
     )
@@ -75,7 +78,7 @@ This will sent in each call the headers 'Accept-Language'.
             }
         }
     ]
-    received_header, received_content = self.handler.get(
+    received_header, received_content = handler.get(
         urls,
-        headers = {'Accept-Language': 'es, en-cl;q=0.5'}
+        permanent_headers = {'Accept-Language': 'es, en-cl;q=0.5'}
     )
