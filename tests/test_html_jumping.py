@@ -5,12 +5,12 @@ from html_jumping import HtmlJumping
 from lxml import etree
 from StringIO import StringIO
 
-class test_html_jumping(TestCase):
+class TestHTMLJumping(TestCase):
     def setUp(self):
         self.handler = HtmlJumping()
     
     def test_get_html_jumping(self):      
-        urls_route = [
+        urls_config = [
             {
                 'url': 'http://pypi.python.org/pypi',
                 'method': 'GET'
@@ -25,7 +25,7 @@ class test_html_jumping(TestCase):
                 }
             }
         ]
-        received_header, received_content = self.handler.get(urls_route)
+        received_header, received_content = self.handler.get(urls_config)
         parser = etree.HTMLParser()
         tree   = etree.parse(StringIO(received_content), parser)
         

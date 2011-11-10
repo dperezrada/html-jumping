@@ -1,7 +1,9 @@
-# What?
+What?
+=====
 Allows to get an HTML, coming from several previous URLs. Sometimes this is needed to get webpages that requires cookies or a HTTP referrer to get a certain page.
 
-# Pre-requisites
+Pre-requisites
+==============
 You will need:
 
 * httplib2
@@ -11,8 +13,12 @@ To run the test you will also need:
 
 * lxml
 
-# Example
-## No proxy 
+Example
+=======
+No proxy
+--------
+::
+
     from html_jumping import HtmlJumping
     handler = HtmlJumping()
     urls = [
@@ -32,8 +38,10 @@ To run the test you will also need:
     ]
     received_header, received_content = handler.get(urls)
 
-## With proxy
+With proxy
+----------
 Allow you to use a HTTP proxy, you will need to install the socksipy library.
+::
 
     from html_jumping import HtmlJumping
     handler = HtmlJumping()
@@ -58,8 +66,10 @@ Allow you to use a HTTP proxy, you will need to install the socksipy library.
     )
 
 
-## With permanent headers
+With permanent headers
+----------------------
 This will sent in each call the headers 'Accept-Language'.
+::
 
     from html_jumping import HtmlJumping
     handler = HtmlJumping()
