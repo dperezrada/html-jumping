@@ -1,3 +1,10 @@
+.. -*- mode: rst; coding: utf-8 -*-
+
+Welcome to HTML-Jumping
+=======================
+
+:Author: * Daniel Perez Rada <dperezrada@gmail.com>
+
 What?
 =====
 Allows to get an HTML, coming from several previous URLs. Sometimes this is needed to get webpages that requires cookies or a HTTP referrer to get a certain page.
@@ -92,3 +99,11 @@ This will sent in each call the headers 'Accept-Language'.
         urls,
         permanent_headers = {'Accept-Language': 'es, en-cl;q=0.5'}
     )
+
+Tests
+=====
+
+Run
+---
+
+    >> nosetests
