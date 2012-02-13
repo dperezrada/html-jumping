@@ -7,7 +7,7 @@ def read(fname):
 
 setup(
   name = "html_jumping",
-  version = "0.2.1",
+  version = "0.2.2",
   author = "Daniel Perez Rada",
   author_email = "dperezrada@gmail.com",
   description = ("Allows to get an HTML, coming from several previous URLs. Sometimes this is needed to get webpages that requires cookies or a HTTP referrer to get a certain page."),
