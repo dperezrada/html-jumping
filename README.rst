@@ -3,7 +3,7 @@
 Welcome to HTML-Jumping
 =======================
 
-:Author: * Daniel Perez Rada <dperezrada@gmail.com>
+:Author: * Daniel Perez Rada <@dperezrada>
 
 What?
 =====
