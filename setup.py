@@ -13,7 +13,7 @@ setup(
   description = ("Allows to get an HTML, coming from several previous URLs. Sometimes this is needed to get webpages that requires cookies or a HTTP referrer to get a certain page."),
   license='GNU Public License v3.0',
   keywords = "html_jumping cookies html get post form referrer",
-  url = "https://github.com/dperezrada/html_jumping",
+  url = "https://github.com/dperezrada/html-jumping",
   packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
   long_description=read('README.rst'),
   classifiers=[
