@@ -77,7 +77,6 @@ class HtmlJumping(object):
                 response, content = self.http_connection.request(base_url, method, headers=request_headers)
             else:
                 if method == 'POST':
-                    print "POST"
                     if headers.get('Content-Type') is not None:
                         headers['Content-Type'] = 'application/x-www-form-urlencoded'
                 response, content = self.http_connection.request(
